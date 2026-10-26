@@ -1,0 +1,91 @@
+{
+  "_comment": "Synthetic demo data only. PANs are masked (first6/last4) and fictitious. Timestamps are UTC (ISO 8601).",
+  "cards": {
+    "CARD-001": {
+      "masked_pan": "523456******4417",
+      "cardholder_ref": "CH-7781",
+      "home_city": "Dubai, United Arab Emirates",
+      "travel_notice": null
+    },
+    "CARD-002": {
+      "masked_pan": "411111******9012",
+      "cardholder_ref": "CH-5520",
+      "home_city": "Cairo, Egypt",
+      "travel_notice": "Travelling to Dubai 2026-10-24 to 2026-10-28"
+    }
+  },
+  "transactions": [
+    {
+      "txn_id": "TXN-1001",
+      "card_id": "CARD-001",
+      "timestamp_utc": "2026-10-24T04:10:00Z",
+      "amount": 32.50,
+      "currency": "AED",
+      "merchant": "Arabica Coffee, Dubai Mall",
+      "mcc": "5814",
+      "channel": "POS_CHIP",
+      "merchant_location": "Dubai Mall, Dubai, United Arab Emirates",
+      "status": "APPROVED"
+    },
+    {
+      "txn_id": "TXN-1002",
+      "card_id": "CARD-001",
+      "timestamp_utc": "2026-10-24T05:25:00Z",
+      "amount": 4890.00,
+      "currency": "GBP",
+      "merchant": "Luxe Watches, Oxford Street",
+      "mcc": "5944",
+      "channel": "POS_CONTACTLESS",
+      "merchant_location": "Oxford Street, London, United Kingdom",
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "txn_id": "TXN-1003",
+      "card_id": "CARD-001",
+      "timestamp_utc": "2026-10-24T07:05:00Z",
+      "amount": 210.00,
+      "currency": "AED",
+      "merchant": "ADNOC Station, Corniche",
+      "mcc": "5541",
+      "channel": "POS_CHIP",
+      "merchant_location": "Corniche Road, Abu Dhabi, United Arab Emirates",
+      "status": "PENDING_REVIEW"
+    },
+    {
+      "txn_id": "TXN-1004",
+      "card_id": "CARD-001",
+      "timestamp_utc": "2026-10-24T07:40:00Z",
+      "amount": 59.99,
+      "currency": "USD",
+      "merchant": "StreamFlix Online",
+      "mcc": "4899",
+      "channel": "ECOM",
+      "merchant_location": "Los Angeles, United States",
+      "status": "APPROVED"
+    },
+    {
+      "txn_id": "TXN-2001",
+      "card_id": "CARD-002",
+      "timestamp_utc": "2026-10-24T06:00:00Z",
+      "amount": 1450.00,
+      "currency": "EGP",
+      "merchant": "Cairo Airport Duty Free",
+      "mcc": "5309",
+      "channel": "POS_CHIP",
+      "merchant_location": "Cairo International Airport, Cairo, Egypt",
+      "status": "APPROVED"
+    },
+    {
+      "txn_id": "TXN-2002",
+      "card_id": "CARD-002",
+      "timestamp_utc": "2026-10-24T12:30:00Z",
+      "amount": 780.00,
+      "currency": "AED",
+      "merchant": "Gold Souk Jewellers",
+      "mcc": "5944",
+      "channel": "POS_CHIP",
+      "merchant_location": "Gold Souk, Deira, Dubai, United Arab Emirates",
+      "status": "PENDING_REVIEW"
+    }
+  ]
+}

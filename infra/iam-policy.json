@@ -1,0 +1,23 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "BedrockInvokeClaudeOrNovaViaInferenceProfile",
+      "Effect": "Allow",
+      "Action": [
+        "bedrock:InvokeModel",
+        "bedrock:InvokeModelWithResponseStream"
+      ],
+      "Resource": [
+        "arn:aws:bedrock:*:619071308860:inference-profile/us.amazon.*",
+        "arn:aws:bedrock:*::foundation-model/amazon.*"
+      ]
+    },
+    {
+      "Sid": "LocationServiceGeocodeOnly",
+      "Effect": "Allow",
+      "Action": ["geo-places:Geocode"],
+      "Resource": "arn:aws:geo-places:us-east-1::provider/default"
+    }
+  ]
+}

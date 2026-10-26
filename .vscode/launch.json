@@ -1,0 +1,63 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "1. Smoke test tool (Location only)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "demo.check_location",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "2. BEFORE - v1 agent (CARD-001)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "agent.app",
+      "args": ["--version", "v1", "Triage the PENDING_REVIEW transactions on CARD-001"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "3. AFTER - v2 agent (CARD-001)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "agent.app",
+      "args": ["--version", "v2", "Triage the PENDING_REVIEW transactions on CARD-001"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "4. AFTER - v2 agent (CARD-002 travel notice)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "agent.app",
+      "args": ["--version", "v2", "Triage the PENDING_REVIEW transactions on CARD-002"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "5. Interactive chat (v2)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "agent.app",
+      "args": ["--version", "v2"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "6. Demo: before vs after (record this)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "demo.before_after",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "integratedTerminal"
+    }
+  ]
+}
