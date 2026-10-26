@@ -56,6 +56,6 @@ The docstring tells the model when *not* to use the tool (online transactions), 
 ## AWS services
 Amazon Bedrock (Amazon Nova Pro) · Amazon Location Service (Places API v2) · AWS IAM · Strands Agents SDK
 
-**Repo:** [github.com/rajmhmd/fraud-triage-agent] · **Demo (< 3 min):** [[link](https://youtu.be/r6BbSt4tGrM)]
+**Repo:** [[github.com/rajmhmd/fraud-triage-agent](https://github.com/rajmhmd/fraud-triage-agent)] · **Demo (< 3 min):** [[link](https://youtu.be/r6BbSt4tGrM)]
 
 
